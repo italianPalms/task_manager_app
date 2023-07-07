@@ -30,6 +30,12 @@ button {
     font-size: 16px;
 }
 
+#submit-btn:hover {
+    background-color: #4640b3;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
 .task-container {
     padding: 40px 20px 20px 20px;
 }
@@ -39,10 +45,76 @@ input[name="task"] {
     height: 35px;
     border: 0.5px solid black;
     border-radius: px;
-    padding: 0;
-    margin: 0; 
+    padding: 0px 10px 0px 10px;
+    margin: 0;
 }
 
 .placeholder {
     opacity: 0.5;
+}
+
+/* Switch */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196f3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Additional style for dark mode */
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode .slider {
+    background-color: #888;
+}
+
+body.dark-mode input:checked + .slider {
+    background-color: #aaa;
+}
+
+body.dark-mode input:checked + .slider:before {
+    background-color: #333;
 }
