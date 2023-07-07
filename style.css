@@ -6,7 +6,9 @@ html {
 body {
     text-align: center;
     padding-top: 100px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
 }
 .container {
     background-color: white;
@@ -16,21 +18,31 @@ body {
 }
 
 button {
-    background-color: steelblue;
+    background-color: #645cff;
     color: white;
-    width: 100px;
-    height: 35px;
-    border: 1px solid black;
-    border-radius: 10px;
+    width: 150px;
+    height: 37px;
+    padding: 0;
+    border: 0px solid black;
+    border-radius: 2px;
+    margin: 0;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .task-container {
-    padding: 40 px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
 }
 
 input[name="task"] {
     width: 300px;
     height: 35px;
-    border: 1px solid black;
-    border-radius: 10px;
+    border: 0.5px solid black;
+    border-radius: px;
+    padding: 0;
+    margin: 0; 
+}
+
+.placeholder {
+    opacity: 0.5;
 }
