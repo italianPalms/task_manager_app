@@ -24,9 +24,13 @@ p {
 
 .switch-container {
     font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
 }
 
-button {
+button, .back-Btn {
     background-color: #645cff;
     color: white;
     width: 150px;
@@ -37,6 +41,10 @@ button {
     margin: 0;
     cursor: pointer;
     font-size: 16px;
+}
+
+.edit-Btn {
+    margin-top: 20px;
 }
 
 #submit-btn:hover {
