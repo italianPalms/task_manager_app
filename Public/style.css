@@ -1,5 +1,7 @@
 html {
     background-color: #f2f4f8;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -18,8 +20,9 @@ p {
 .container {
     background-color: white;
     padding: 20px 20px 40px 20px;
-    margin-right: 300px;
-    margin-left: 300px;
+    /* margin-right: 300px;
+    margin-left: 300px; */
+    min-width: 400px;
 }
 
 .switch-container {
