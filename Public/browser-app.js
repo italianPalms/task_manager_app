@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 //Handles the dark mode - not completed
 const switchContainer = document.getElementById('switchContainer');
 const toggleSwitch = document.getElementById('toggleSwitch');
