@@ -7,25 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form class="task-form">
     <div class="container">
     <h2>Task Manager</h2>
-    <form action="" method="post">  
-        <input type="text" id="task" name="task" placeholder="e.g. Wash dishes" class="placeholder">
+        <input 
+            type="text" 
+            id="task" 
+            name="task" 
+            placeholder="e.g. Wash dishes" 
+            class="placeholder">
         <button type="submit" id="submit-btn">Submit</button>
+    </div>
+    <div class="form-alert"></div>
     </form>
-    <a href="task.html">
-        <button class="edit-Btn">Edit task</button>
-    </a>
-</div>
-<div class="task-container">
-    <p>There was an error, please try again later....</p>
-</div>
-<di class="switch-container">Dark Mode
-<label for="switch" class="switch" id="switchContainer">
-    <input type="checkbox" id="toggleSwitch">
-    <span class="slider"></span>
-</label>
-</div>
-<script src="browser-app.js"></script>
+    <section class="tasks-container">
+        <p class="loading-text">Loading...</p>
+        <div class="tasks"></div>
+    </section>
+    <div class="switch-container">Dark Mode
+    <label for="switch" class="switch" id="switchContainer">
+        <input type="checkbox" id="toggleSwitch">
+        <span class="slider"></span>
+    </label>
+    </div>
+    <script src="browser-app.js"></script>
 </body>
 </html>
