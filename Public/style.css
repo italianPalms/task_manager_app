@@ -81,7 +81,7 @@ input[name="task"] {
     margin: 0;
 }
 
-.placeholder {
+.task-input {
     opacity: 0.5;
 }
 
