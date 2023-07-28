@@ -49,10 +49,30 @@ showTasks();
 
 
 //Handles the dark mode - not completed
-const switchContainer = document.getElementById('switchContainer');
 const toggleSwitch = document.getElementById('toggleSwitch');
 
-switchContainer.addEventListener('click', function() {
+toggleSwitch.addEventListener('change', function () {
     document.body.classList.toggle('dark-mode');
-    toggleSwitch.checked = !toggleSwitch.checked;
+    document.documentElement.classList.toggle('dark-mode');
+
+    //save dark mode to local storage
+    localStorage.setItem('dark-mode', toggleSwitch.checked ? 'true' : 'false');
 });
+
+function loadDarkModePreference() {
+    const darkModePreference = localStorage.getItem('dark-mode');
+    const isDarkMode = darkModePreference === 'true';
+
+    //apply dark mode preference on page load
+    if (isDarkMode) {
+      document.body.classList.add('dark-mode');
+      document.documentElement.classList.add('dark-mode');
+      toggleSwitch.checked = true;
+    } else {
+        document.body.classList.remove('dark-mode');
+        document.documentElement.classList.remove('dark-mode');
+        toggleSwitch.checked = false;
+    }
+  }
+  //load dark mode preference when the page is loaded
+  document.addEventListener('DOMContentLoaded', loadDarkModePreference);
