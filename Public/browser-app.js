@@ -10,7 +10,7 @@ const showTasks = async () => {
     loadingDOM.computedStyleMap.visibility = 'visible'
     try {
         const {
-            data: {tasks}, 
+            data: { tasks },
         } = await axios.get('/api/v1/tasks')
         if (tasks.length < 1) {
             tasksDOM.innerHTML = '<h5 class="empty-list">No tasks in your list</h5>'

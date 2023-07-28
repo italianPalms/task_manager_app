@@ -8,15 +8,15 @@
 </head>
 <body>
     <form class="task-form">
-    <div class="container">
     <h2>Task Manager</h2>
+    <div class="form-control">
         <input 
             type="text" 
-            id="task" 
-            name="task" 
+            name="name" 
             placeholder="e.g. Wash dishes" 
-            class="task-input">
-        <button type="submit" id="submit-btn">Submit</button>
+            class="task-input"
+            />
+        <button type="submit" class="btn submit-btn" id="submit-btn">Submit</button>
     </div>
     <div class="form-alert"></div>
     </form>
@@ -30,6 +30,10 @@
         <span class="slider"></span>
     </label>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
     <script src="browser-app.js"></script>
 </body>
 </html>
