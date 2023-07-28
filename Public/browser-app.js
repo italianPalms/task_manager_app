@@ -37,7 +37,7 @@ const showTasks = async () => {
             tasksDOM.innerHTML = allTasks
     } catch (error) {
         tasksDOM.innerHTML = 
-        '<h5 class="empty-list">There was an error, please try again later...</h5>'
+        '<h4 class="empty-list">There Was An Error, Please Try Again Later...</h4>'
     }
     loadingDOM.style.visibility = 'hidden'
 }
