@@ -1,13 +1,11 @@
-
 const tasksDOM = document.querySelector('.tasks');
 const loadingDOM = document.querySelector('.loading-text');
 const formDOM = document.querySelector('.task-form');
 const taskInputDOM = document.querySelector('.task-input');
 const formAlertDOM = document.querySelector('.form-alert');
-
 //load tasks from API
 const showTasks = async () => {
-    loadingDOM.computedStyleMap.visibility = 'visible'
+    loadingDOM.style.visibility = 'visible'
     try {
         const {
             data: { tasks },
